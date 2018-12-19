@@ -74,7 +74,7 @@ Go to the App Services tab, where you can see your new web app listed (click on 
 
 Click on the URL for your new website:
 
-![](img/browse-website-1.png)
+![](img/browse-website-1a.png)
 
 This will open a new tab in your browser and show you your web app:
 
