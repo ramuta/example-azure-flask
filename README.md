@@ -68,11 +68,11 @@ Click on **Go to resource** now.
 
 ### App Services list
 
-Go to the App Services tab, where you can see your new web app listed:
+Go to the App Services tab, where you can see your new web app listed (click on it):
 
 ![](img/app-services-list.png)
 
-Click on the three dots on the right side and select **Browse**:
+Click on the URL for your new website:
 
 ![](img/browse-website-1.png)
 
