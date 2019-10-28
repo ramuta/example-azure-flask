@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 
 from apps import commonmodules
 
-from app import dash_app
+from app import app
 import numpy as np
 
 N = 1000

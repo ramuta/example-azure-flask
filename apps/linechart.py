@@ -3,7 +3,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 from apps import commonmodules
 
-from app import dash_app
+from app import app
 
 layout = html.Div([
     commonmodules.get_header(),
@@ -12,7 +12,7 @@ layout = html.Div([
     html.Div(id='my-div')
 ])
 
-@dash_app.callback(
+@app.callback(
     Output(component_id='my-div', component_property='children'),
     [Input(component_id='my-id', component_property='value')]
 )

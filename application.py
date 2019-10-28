@@ -2,17 +2,17 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
-from app import dash_app
+from app import app
 from apps import linechart, barchart, home , scatterplot
 
 
-dash_app.layout = html.Div([
+app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
     html.Div(id='page-content')
 ])
 
 
-@dash_app.callback(Output('page-content', 'children'),
+@app.callback(Output('page-content', 'children'),
               [Input('url', 'pathname')])
 def display_page(pathname):
     if pathname == '/':
@@ -31,4 +31,4 @@ external_css = ["hhttps://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstr
                 "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"]
                 
 if __name__ == '__main__':
-    dash_app.run_server(debug=True)
+    app.run_server(debug=True)
